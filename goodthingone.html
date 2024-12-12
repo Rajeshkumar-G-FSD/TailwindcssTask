@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .curved-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .curved-image img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo Section -->
+            <div class="flex items-center">
+                <img src="Askmeidentity.png" alt="Logo" class="h-10 w-auto">
+                <h1 class="ml-2 text-xl font-semibold text-gray-800">AskmeIdentity</h1>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#" class="hover:text-gray-900">Home</a>
+                <a href="#" class="hover:text-gray-900">About</a>
+                <a href="#" class="hover:text-gray-900">Courses</a>
+                <a href="#" class="hover:text-gray-900">Contact</a>
+            </nav>
+
+            <!-- Right-Side Icons and Buttons -->
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4">
+                    <!-- First Icon -->
+                    <div class="relative">
+                        <img src="./cake_notify.png" alt="Icon 1" class="h-6 w-6">
+                        <span
+                            class="absolute -top-1 -right-1 bg-green-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </div>
+                    <!-- Second Icon -->
+                    <img src="./profile.png" alt="Icon 2" class="h-6 w-6">
+                    <!-- Third Icon -->
+                    <img src="./search_Icon.png" alt="Icon 3" class="h-6 w-6">
+                    <!-- Login Link -->
+                    <a href="#" class="text-gray-600 font-medium hover:text-gray-900">Login</a>
+                    <!-- Signup Button -->
+                    <a href="#"
+                        class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-medium px-4 py-2 rounded-md hover:from-purple-600 hover:to-indigo-600">Signup</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-b from-purple-600 to-blue-900">
+            <div class="container mx-auto py-12 px-6">
+                <!-- Top Text -->
+                <p class="text-sm text-white uppercase tracking-wide mb-4">Successful coaches are visionaries</p>
+
+                <!-- Main Content -->
+                <div class="flex flex-col lg:flex-row items-center justify-between">
+                    <!-- Left Content -->
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <h1 class="text-white text-4xl lg:text-6xl font-bold mb-6">
+                            Good <span class="text-blue-400">coaching</span> is<br> good teaching & nothing else.
+                        </h1>
+
+                        <div class="flex space-x-4 justify-center lg:justify-start mb-6">
+                            <button
+                                class="px-6 py-3 border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-blue-900">View
+                                Courses</button>
+                            <button
+                                class="px-6 py-3 bg-white text-blue-900 font-medium rounded-md hover:bg-gray-200">Get
+                                Free Consultation</button>
+                        </div>
+
+                        <div class="relative max-w-lg mx-auto lg:mx-0 pt-10">
+                            <input type="text" placeholder="What do you want to learn today?"
+                                class="w-full px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                            <button
+                                class="absolute right-3 top-1/4 mt-3 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                Search
+                            </button>
+                        </div>
+
+                        <!-- Spotify Logo Centered -->
+                        <div class="flex justify-center mt-4">
+                            <img src="./arcimage.png" alt="Spotify" class="h-20 mt-4">
+                        </div>
+                    </div>
+
+                    <div class="relative md:w-1/2 mt-10 md:mt-0 flex justify-top">
+                        <img src="./vertical_line.png" alt="Shyam">
+                        <div class="relative z-10 mt-10 flex items-center space-x-2"></div>
+                        <div class="relative z-10 mt-2 ml-5">
+                            <h3 class="text-lg font-bold text-indigo-800 text-white">Shyam</h3>
+                            <h3 class="text-gray-600 text-white">
+                                In a coaching role, you ask the <br> questions and rely more on your <br>staff, who
+                                become the experts, to <br>provide the information.
+                            </h3>
+                            <h3 class="text-blue-600 font-bold mt-3">4.9</h3>
+                        </div>
+                        <!-- Shyam Text Area -->
+                    </div>
+
+                    <div class="relative flex flex-col items-center">
+                        <!-- Splash Image -->
+                        <div class="absolute inset-0">
+                            <img src="./splash.png" alt="Splash Background" class="w-full h-full object-cover">
+                        </div>
+                        <!-- Overlay Girl Image -->
+                        <div class="relative z-10 mt-20 lg:w-1/2 flex justify-center">
+                            <img src="brunettewoman-hugging-laptop-removebg-preview.png" alt="Coaching Woman"
+                                class="h-96 w-auto opacity-90">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-b from-purple-600 to-blue-900 py-1">
+                <div class="mt-12 flex justify-center space-x-16">
+                    <img src="./spotify.png" alt="Spotify" class="h-6">
+                    <img src="./amazon.png" alt="Amazon" class="h-6">
+                    <img src="./spotify.png" alt="Spotify" class="h-6">
+                    <img src="./cisco.png" alt="Cisco" class="h-6">
+                    <img src="./logitech.png" alt="Logitech" class="h-6">
+                    <img src="./amazon.png" alt="Amazon" class="h-6">
+                </div>
+            </div>
+        </div>
+        <div class="bg-blue-100 mb-20">
+
+            <div class="bg-blue-100 flex justify-center mt-10">
+                <div class="text-center">
+                    <div class="flex items-center mb-4 mt-10">
+                        <img src="./feature_round.png" alt="Round Image" class="w-16 h-16 rounded-full mr-20">
+                        <div class="text-left">
+                            <h1 class="text-2xl font-bold">
+                                <span class="text-black">Featured</span>
+                                <span class="text-blue-500">Course</span>
+                            </h1>
+                            <p class="text-gray-600 mt-2">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-100 mt-20 mb-20">
+                <div class="container mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Course Card 1 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imageone.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">Motion Graphics: Create a Nice Typography Animation
+                                </h2>
+                                <p class="text-gray-600">1,957 Students</p>
+                                <p class="text-gray-600">0h 59m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 2 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imagetwo.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">Advance PHP knowledge with JS to make smart web</h2>
+                                <p class="text-gray-600">9,575 Students</p>
+                                <p class="text-gray-600">0h 59m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 3 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imagethree.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">Education Software and PHP and JS System Script</h2>
+                                <p class="text-gray-600">2,957 Students</p>
+                                <p class="text-gray-600">2h 49m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 4 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imagefour.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">The Complete Financial Analyst Training & Investing
+                                </h2>
+                                <p class="text-gray-600">5,457 Students</p>
+                                <p class="text-gray-600">0h 49m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 5 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imagefive.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">Marketing 2023: Complete Guide To Instagram Growth
+                                </h2>
+                                <p class="text-gray-600">595 Students</p>
+                                <p class="text-gray-600">0h 49m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 6 -->
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <img src="./feature_imagesix.png" alt="Course Image"
+                                class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <h2 class="text-lg font-semibold">Learn 3D Modelling and Design for Beginners</h2>
+                                <p class="text-gray-600">2,357 Students</p>
+                                <p class="text-gray-600">3h 19m</p>
+                                <p class="text-blue-600 font-bold">Rs.499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-6 mb-10"> <!-- Add this margin-bottom class -->
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Explore courses</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+            <div class="container mx-auto text-center py-16">
+                <div class="flex items-center justify-left mb-8">
+                    <div class="curved-image"> <img src="./learn_arc_curve.png" alt="Curved Background"> </div>
+                    <div class="w-2/3 text-left pl-40">
+                        <h1 class="text-4xl font-bold mb-4">Why <span class="text-blue-300">learn</span> with our
+                            courses?</h1>
+                        <p class="mb-12">We are providing the best courses and top classes. And extraordinary placement
+                            training......</p>
+                    </div>
+                </div>
+                <div class="flex justify-around">
+                    <div class="w-1/3"> <img src="./learncourse_imageone.png" alt="Learn Icon" class="mx-auto mb-4">
+                        <h2 class="text-2xl font-semibold mb-2">01. Learn</h2>
+                        <p>Learn continually. There is always "one more thing" to learn.</p>
+                    </div>
+                    <div class="w-1/3"> <img src="./learncourse_imagetwo.png" alt="Graduate Icon" class="mx-auto mb-4">
+                        <h2 class="text-2xl font-semibold mb-2">02. Graduate</h2>
+                        <p>Be bold, be courageous, be your best.</p>
+                    </div>
+                    <div class="w-1/3"> <img src="./learncourse_imagethree.png" alt="Work Icon" class="mx-auto mb-4">
+                        <h2 class="text-2xl font-semibold mb-2">03. Work</h2>
+                        <p>Great companies are built in the office, with hard work put in by team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-blue-50">
+            <div class="container mx-auto py-12">
+                <h1 class="text-3xl font-bold text-center mb-6">Top <span class="text-blue-600">Categories</span></h1>
+                <p class="text-center mb-12">100+ unique online course list designs</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imageone.png"
+                            alt="Digital Marketing" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Digital Marketing</h2>
+                        <p>25 Courses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagetwo.png"
+                            alt="Web Development" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Web Development</h2>
+                        <p>16 Courses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagethree.png"
+                            alt="Art & Humanities" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Art & Humanities</h2>
+                        <p>76 Courses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagefour.png"
+                            alt="Personal Development" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Personal Development</h2>
+                        <p>22 Courses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagefive.png"
+                            alt="IT and Software" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">IT and Software</h2>
+                        <p>110 Courses</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagesix.png"
+                            alt="Graphic Design" class="mx-auto mb-4">
+                        <h2 class="text-xl font-semibold mb-2">Graphic Design</h2>
+                        <p>85 Courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    </div>
+
+</html>
