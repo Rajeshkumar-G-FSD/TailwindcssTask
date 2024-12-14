@@ -62,12 +62,22 @@
             margin-bottom: 10px;
         }
 
-        .arc-image {
+        .arc-images {
             clip-path: ellipse(50% 25% at 50% 100%);
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+        }
+
+        .arc-image {
+            clip-path: ellipse(50% 25% at 50% 100%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: auto;
         }
@@ -114,7 +124,7 @@
         </div>
 
         <div class="bg-gradient-to-b from-purple-600 to-blue-900">
-            <div class="container mx-auto py-12 px-6">
+            <div class="container mx-auto py-8 px-6">
                 <!-- Top Text -->
                 <p class="text-sm text-white uppercase tracking-wide mb-4">Successful coaches are visionaries</p>
 
@@ -144,10 +154,7 @@
                             </button>
                         </div>
 
-                        <!-- Spotify Logo Centered -->
-                        <div class="flex justify-center mt-4">
-                            <img src="./arcimage.png" alt="Spotify" class="h-60 mt-4">
-                        </div>
+                     
                     </div>
 
                     <div class="relative md:w-1/2 mt-10 md:mt-0 flex justify-top">
@@ -168,16 +175,23 @@
                             <img src="./splash.png" alt="Background splash" class="w-full h-auto">
                             <img src="brunettewoman-hugging-laptop-removebg-preview.png" alt="Girl with laptop"
                                 class="absolute top-0 left-0 w-full h-full object-cover">
-                                
+
                         </div>
 
                     </div>
+                    <div class="flex justify-center mt-4 absolute bottom-0 left-1/2 transform -translate-x-1/2"> <img src="./arcimage.png" alt="Arc Image" class="arc-image h-60"> </div>
+    
+                </div>
+                <!-- Spotify Logo Centered -->
+                <div class="flex justify-center mt-4">
+                    <img src="./arcimage.png" alt="Spotify" class="h-60 mt-4">
                 </div>
             </div>
 
-            <div class="bg-gradient-to-b from-purple-600 to-blue-900 py-1">
+            <div class="bg-gradient-to-b from-purple-600 to-blue-900 bottom-20 py-1">
+                
                 <div class="mt-12 flex justify-center space-x-16">
-                    <img src="./spotify.png" alt="Spotify" class="h-6">
+                    <img src="./spotify.png" alt="Spotify" class="h-6 mb-5">
                     <img src="./amazon.png" alt="Amazon" class="h-6">
                     <img src="./spotify.png" alt="Spotify" class="h-6">
                     <img src="./cisco.png" alt="Cisco" class="h-6">
