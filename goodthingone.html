@@ -61,6 +61,16 @@
             border-radius: 50%;
             margin-bottom: 10px;
         }
+
+        .arc-image {
+            clip-path: ellipse(50% 25% at 50% 100%);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -129,14 +139,14 @@
                             <input type="text" placeholder="What do you want to learn today?"
                                 class="w-full px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
                             <button
-                                class="absolute right-3 top-1/4 mt-3 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                class="absolute right-3 top-1/4 mt-11 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
                                 Search
                             </button>
                         </div>
 
                         <!-- Spotify Logo Centered -->
                         <div class="flex justify-center mt-4">
-                            <img src="./arcimage.png" alt="Spotify" class="h-20 mt-4">
+                            <img src="./arcimage.png" alt="Spotify" class="h-60 mt-4">
                         </div>
                     </div>
 
@@ -153,17 +163,14 @@
                         </div>
                         <!-- Shyam Text Area -->
                     </div>
+                    <div class="md:w-1/2 flex flex-col items-center">
+                        <div class="relative">
+                            <img src="./splash.png" alt="Background splash" class="w-full h-auto">
+                            <img src="brunettewoman-hugging-laptop-removebg-preview.png" alt="Girl with laptop"
+                                class="absolute top-0 left-0 w-full h-full object-cover">
+                                
+                        </div>
 
-                    <div class="relative flex flex-col items-center">
-                        <!-- Splash Image -->
-                        <div class="absolute inset-0">
-                            <img src="./splash.png" alt="Splash Background" class="w-full h-full object-cover">
-                        </div>
-                        <!-- Overlay Girl Image -->
-                        <div class="relative z-10 mt-20 lg:w-1/2 flex justify-center">
-                            <img src="brunettewoman-hugging-laptop-removebg-preview.png" alt="Coaching Woman"
-                                class="h-96 w-auto opacity-90">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -348,13 +355,17 @@
                 </div>
             </div>
         </div>
-       
+
         <div class="flex items-center justify-center min-h-screen">
-            <div class="relative w-full max-w-2xl p-8 bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg shadow-lg" style="min-height: 250px;">
-                <h2 class="text-2xl font-bold text-center text-white">Subscribe For Get Update<br> Every New Courses</h2>
-                <p class="mt-2 text-center text-white ">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+            <div class="relative w-full max-w-2xl p-8 bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg shadow-lg"
+                style="min-height: 250px;">
+                <h2 class="text-2xl font-bold text-center text-white">Subscribe For Get Update<br> Every New Courses
+                </h2>
+                <p class="mt-2 text-center text-white ">20k+ students daily learn with Eduvi. Subscribe for new courses.
+                </p>
                 <div class="mt-6 flex justify-center">
-                    <input type="email" placeholder="enter your email" class="px-4 py-2 rounded-l-lg focus:outline-none">
+                    <input type="email" placeholder="enter your email"
+                        class="px-4 py-2 rounded-l-lg focus:outline-none">
                     <button class="px-4 py-2 bg-blue-600 text-white rounded-r-lg">Subscribe</button>
                 </div>
                 <div class="absolute top-4 left-4 w-12 h-12 rounded-full overflow-hidden">
@@ -383,27 +394,29 @@
 
 
         <div class="flex items-center justify-center bg-gray-100 py-10">
-            
-<div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="relative w-full max-w-4xl"> <!-- Main Image --> <img src="./learncourse_video.png" alt="Main Image"
-            class="w-full h-auto rounded-lg"> <!-- Centered Play Button -->
-        <div class="absolute inset-0 flex items-center justify-center"> <img src="./video_play.png" alt="Play Button"
-                class="w-16 h-16"> </div> <!-- Color Image on the Right Side -->
-                <div class="absolute bottom-5 right-5 transform translate-x-1/2 translate-y-1/2"> <img src="./learncourse_videocolorbottm.png" alt="Color Image" class="w-24 h-24"> </div></div>
-    
-        </div>
-            
-            
+
+            <div class="flex items-center justify-center min-h-screen bg-gray-100">
+                <div class="relative w-full max-w-4xl"> <!-- Main Image --> <img src="./learncourse_video.png"
+                        alt="Main Image" class="w-full h-auto rounded-lg"> <!-- Centered Play Button -->
+                    <div class="absolute inset-0 flex items-center justify-center"> <img src="./video_play.png"
+                            alt="Play Button" class="w-16 h-16"> </div> <!-- Color Image on the Right Side -->
+                    <div class="absolute bottom-5 right-5 transform translate-x-1/2 translate-y-1/2"> <img
+                            src="./learncourse_videocolorbottm.png" alt="Color Image" class="w-24 h-24"> </div>
+                </div>
+
+            </div>
+
+
         </div>
 
 
         <div class="bg-blue-50 items-center justify-center">
             <div class="container mx-auto py-12 bg-blue-50">
                 <div class="relative bg-white shadow-lg rounded-lg p-8 bg-blue-50">
-                  
+
                     <div class="text-center mb-4"> <!-- Reduced margin-bottom -->
-                        <div class="absolute left-20 bg-blue-50"> <img src="testimonial_left_arc.png"
-                            alt="Arc Image" class="w-24 h-24 object-cover"> </div>
+                        <div class="absolute left-20 bg-blue-50"> <img src="testimonial_left_arc.png" alt="Arc Image"
+                                class="w-24 h-24 object-cover"> </div>
                         <h1 class="text-3xl font-bold text-blue-700">Testimonials</h1>
                         <p class="text-gray-600">What our students say about us</p>
                         <div class="bg-blue-50 items-center justify-center">
