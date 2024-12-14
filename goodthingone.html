@@ -12,6 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
     <style>
         .curved-image {
             position: relative;
@@ -62,6 +66,22 @@
             margin-bottom: 10px;
         }
 
+        .profile-icon {
+            position: absolute;
+            top: -25px;
+            /* Move the icon half out of the card */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            /* Adjust the size of the icon as needed */
+            height: 50px;
+            /* Adjust the size of the icon as needed */
+            border-radius: 50%;
+            /* Make the icon circular */
+            border: 2px solid #fff;
+            /* Optional: Add a border around the icon */
+        }
+
         .arc-images {
             clip-path: ellipse(50% 25% at 50% 100%);
             position: absolute;
@@ -80,6 +100,11 @@
             transform: translate(-50%, -50%);
             width: 100%;
             height: auto;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -126,43 +151,43 @@
         <div class="bg-gradient-to-b from-purple-600 to-blue-900">
             <div class="container mx-auto py-8 px-6">
                 <!-- Top Text -->
-                <p class="text-sm text-white uppercase tracking-wide mb-4">Successful coaches are visionaries</p>
+                <p class="text-sm text-white uppercase tracking-wide mb-4" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Successful coaches are visionaries</p>
 
                 <!-- Main Content -->
                 <div class="flex flex-col lg:flex-row items-center justify-between">
                     <!-- Left Content -->
                     <div class="lg:w-1/2 text-center lg:text-left">
-                        <h1 class="text-white text-4xl lg:text-6xl font-bold mb-6">
-                            Good <span class="text-blue-400">coaching</span> is<br> good teaching & nothing else.
+                        <h1 class="text-white text-4xl lg:text-6xl font-bold mb-6" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">
+                            Good <span class="text-blue-400" style="font-family: 'Righteous', sans-serif;  color: #0E38CD;">coaching</span> is<br> good teaching & nothing else.
                         </h1>
 
                         <div class="flex space-x-4 justify-center lg:justify-start mb-6">
                             <button
-                                class="px-6 py-3 border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-blue-900">View
+                                class="px-6 py-3 border-2 border-white text-white font-medium rounded-md hover:bg-white hover:text-blue-900" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">View
                                 Courses</button>
-                            <button
-                                class="px-6 py-3 bg-white text-blue-900 font-medium rounded-md hover:bg-gray-200">Get
-                                Free Consultation</button>
+                            <div
+                                class="px-6 py-3" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Get
+                                Free Consultation</div>
                         </div>
 
-                        <div class="relative max-w-lg mx-auto lg:mx-0 pt-10">
+                        <div class="relative max-w-lg mx-auto lg:mx-0 pt-10" style="font-family: 'Righteous', sans-serif;  color: #4F547B;">
                             <input type="text" placeholder="What do you want to learn today?"
                                 class="w-full px-4 py-3 rounded-full text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400">
                             <button
-                                class="absolute right-3 top-1/4 mt-11 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+                                class="absolute right-3 top-1/4 mt-11 transform -translate-y-1/2 bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">
                                 Search
                             </button>
                         </div>
 
-                     
+
                     </div>
 
-                    <div class="relative md:w-1/2 mt-10 md:mt-0 flex justify-top">
+                    <div class="relative md:w-1/2 left-20 md:mt-0 flex justify-top">
                         <img src="./vertical_line.png" alt="Shyam">
                         <div class="relative z-10 mt-10 flex items-center space-x-2"></div>
                         <div class="relative z-10 mt-2 ml-5">
-                            <h3 class="text-lg font-bold text-indigo-800 text-white">Shyam</h3>
-                            <h3 class="text-gray-600 text-white">
+                            <h3 class="text-lg font-bold text-indigo-800 text-white" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Shyam</h3>
+                            <h3 class="text-gray-600 text-white" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">
                                 In a coaching role, you ask the <br> questions and rely more on your <br>staff, who
                                 become the experts, to <br>provide the information.
                             </h3>
@@ -179,8 +204,9 @@
                         </div>
 
                     </div>
-                    <div class="flex justify-center mt-4 absolute bottom-0 left-1/2 transform -translate-x-1/2"> <img src="./arcimage.png" alt="Arc Image" class="arc-image h-60"> </div>
-    
+                    <div class="flex justify-center mt-4 absolute bottom-0 left-1/2 transform -translate-x-1/2"> <img
+                            src="./arcimage.png" alt="Arc Image" class="arc-image h-60"> </div>
+
                 </div>
                 <!-- Spotify Logo Centered -->
                 <div class="flex justify-center mt-4">
@@ -189,7 +215,7 @@
             </div>
 
             <div class="bg-gradient-to-b from-purple-600 to-blue-900 bottom-20 py-1">
-                
+
                 <div class="mt-12 flex justify-center space-x-16">
                     <img src="./spotify.png" alt="Spotify" class="h-6 mb-5">
                     <img src="./amazon.png" alt="Amazon" class="h-6">
@@ -200,103 +226,139 @@
                 </div>
             </div>
         </div>
-        <div class="bg-blue-100 mb-20">
+        <div class="bg-blue-100 ">
 
             <div class="bg-blue-100 flex justify-center mt-10">
                 <div class="text-center">
                     <div class="flex items-center mb-4 mt-10">
                         <img src="./feature_round.png" alt="Round Image" class="w-16 h-16 rounded-full mr-20">
                         <div class="text-left">
-                            <h1 class="text-2xl font-bold">
-                                <span class="text-black">Featured</span>
-                                <span class="text-blue-500">Course</span>
+                            <h1 class="text-2xl font-bold flex justify-center items-center">
+                                <span class="text-black" style="font-family: 'Righteous', sans-serif;  color: #323232;">Featured</span>
+                                <span class="text-blue-500" style="font-family: 'Righteous', sans-serif;  color: #4883FF;">Course</span>
                             </h1>
-                            <p class="text-gray-600 mt-2">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
+                            <p class="text-gray-600 mt-2" style="font-family: 'Righteous', sans-serif;  color: #000000;">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-blue-100 mt-20 mb-20">
+            <div class="bg-blue-100 mt-20 p-20">
                 <div class="container mx-auto">
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                         <!-- Course Card 1 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imageone.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="bg-white rounded-lg shadow-md p-4 mr-5"> <img src="./feature_imageone.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
                             <div class="p-4">
-                                <h2 class="text-lg font-semibold">Motion Graphics: Create a Nice Typography Animation
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">1,957 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">0h 59m</p>
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">Motion Graphics: Create a Nice Typography Animation
                                 </h2>
-                                <p class="text-gray-600">1,957 Students</p>
-                                <p class="text-gray-600">0h 59m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
                             </div>
                         </div>
-
                         <!-- Course Card 2 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imagetwo.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="bg-white rounded-lg shadow-md p-4 mr-5"> <img src="./feature_imagetwo.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
                             <div class="p-4">
-                                <h2 class="text-lg font-semibold">Advance PHP knowledge with JS to make smart web</h2>
-                                <p class="text-gray-600">9,575 Students</p>
-                                <p class="text-gray-600">0h 59m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">9,575 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">0h 59m</p>
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">Advance PHP knowledge with JS to make smart web</h2>
+
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
                             </div>
                         </div>
 
                         <!-- Course Card 3 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imagethree.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="bg-white rounded-lg shadow-md p-4"> <img src="./feature_imagethree.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
                             <div class="p-4">
-                                <h2 class="text-lg font-semibold">Education Software and PHP and JS System Script</h2>
-                                <p class="text-gray-600">2,957 Students</p>
-                                <p class="text-gray-600">2h 49m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">2,957 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">2h 49m</p>
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">Education Software and PHP and JS System Script</h2>
+
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
                             </div>
                         </div>
+                        <!---->
+
 
                         <!-- Course Card 4 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imagefour.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="bg-white rounded-lg shadow-md p-4 mt-5 mr-5"> <img src="./feature_imagefour.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
                             <div class="p-4">
-                                <h2 class="text-lg font-semibold">The Complete Financial Analyst Training & Investing
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">5,457 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">0h 49m</p>
+
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">The Complete Financial Analyst Training & Investing
                                 </h2>
-                                <p class="text-gray-600">5,457 Students</p>
-                                <p class="text-gray-600">0h 49m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
                             </div>
                         </div>
+                        <!---->
 
                         <!-- Course Card 5 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imagefive.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
+                        <div class="bg-white rounded-lg shadow-md p-4 mt-5 mr-5"> <img src="./feature_imagefive.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
                             <div class="p-4">
-                                <h2 class="text-lg font-semibold">Marketing 2023: Complete Guide To Instagram Growth
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">595 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">0h 49m</p>
+
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">Marketing 2023: Complete Guide To Instagram Growth
                                 </h2>
-                                <p class="text-gray-600">595 Students</p>
-                                <p class="text-gray-600">0h 49m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+
+                        <!-- Course Card 6 -->
+                        <div class="bg-white rounded-lg shadow-md p-4 mt-5"> <img src="./feature_imagesix.png"
+                                alt="Course Image" class="w-full h-40 object-cover rounded-t-lg">
+                            <div class="p-4">
+                                <div class="flex justify-between mb-2">
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">2,357 Students</p>
+                                    <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B; font-size: 10px;">3h 19m</p>
+
+                                </div>
+                                <h2 class="text-lg font-semibold" style="font-family: 'Righteous', sans-serif;  color: #324361;">Learn 3D Modelling and Design for Beginners</h2>
+
+                                <div class="flex justify-between items-center mt-2">
+                                    <p class="font-bold" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">Rs.499</p> <img src="./cart_icon.png"
+                                        alt="Cart Icon" class="w-6 h-6">
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Course Card 6 -->
-                        <div class="bg-white rounded-lg shadow-md p-4">
-                            <img src="./feature_imagesix.png" alt="Course Image"
-                                class="w-full h-40 object-cover rounded-t-lg">
-                            <div class="p-4">
-                                <h2 class="text-lg font-semibold">Learn 3D Modelling and Design for Beginners</h2>
-                                <p class="text-gray-600">2,357 Students</p>
-                                <p class="text-gray-600">3h 19m</p>
-                                <p class="text-blue-600 font-bold">Rs.499</p>
-                            </div>
-                        </div>
+                        <!---->
+
                     </div>
-                    <div class="text-center mt-6 mb-10"> <!-- Add this margin-bottom class -->
-                        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Explore courses</button>
+                    <div class="text-center mt-6"> <!-- Add this margin-bottom class -->
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-lg" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Explore courses</button>
                     </div>
                 </div>
             </div>
@@ -308,24 +370,34 @@
                 <div class="flex items-center justify-left mb-8">
                     <div class="curved-image"> <img src="./learn_arc_curve.png" alt="Curved Background"> </div>
                     <div class="w-2/3 text-left pl-40">
-                        <h1 class="text-4xl font-bold mb-4">Why <span class="text-blue-300">learn</span> with our
+                        <h1 class="text-4xl font-bold mb-4"
+                            style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Why <span
+                                class="text-blue-300" style="font-family: 'Righteous', sans-serif;">learn</span> with
+                            our
                             courses?</h1>
-                        <p class="mb-12">We are providing the best courses and top classes. And extraordinary placement
+                        <p class="mb-12" style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">We are providing
+                            the best courses and top classes. And<br> extraordinary placement
                             training......</p>
                     </div>
                 </div>
                 <div class="flex justify-around">
                     <div class="w-1/3"> <img src="./learncourse_imageone.png" alt="Learn Icon" class="mx-auto mb-4">
-                        <h2 class="text-2xl font-semibold mb-2">01. Learn</h2>
-                        <p>Learn continually. There is always "one more thing" to learn.</p>
+                        <h2 class="text-2xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">01. Learn</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Learn continually. There is
+                            always "one more thing" to learn.</p>
                     </div>
                     <div class="w-1/3"> <img src="./learncourse_imagetwo.png" alt="Graduate Icon" class="mx-auto mb-4">
-                        <h2 class="text-2xl font-semibold mb-2">02. Graduate</h2>
-                        <p>Be bold, be courageous, be your best.</p>
+                        <h2 class="text-2xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">02. Graduate</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Be bold, be courageous, be
+                            your best.</p>
                     </div>
                     <div class="w-1/3"> <img src="./learncourse_imagethree.png" alt="Work Icon" class="mx-auto mb-4">
-                        <h2 class="text-2xl font-semibold mb-2">03. Work</h2>
-                        <p>Great companies are built in the office, with hard work put in by team.</p>
+                        <h2 class="text-2xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">03. Work</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Great companies are built in
+                            the office, with hard work put in by team.</p>
                     </div>
                 </div>
             </div>
@@ -333,38 +405,47 @@
 
         <div class="bg-blue-50">
             <div class="container mx-auto py-12">
-                <h1 class="text-3xl font-bold text-center mb-6">Top <span class="text-blue-600">Categories</span></h1>
-                <p class="text-center mb-12">100+ unique online course list designs</p>
+                <h1 class="text-3xl font-bold text-center mb-6"
+                    style="font-family: 'Righteous', sans-serif;  color: #4F547B;">Top <span class="text-blue-600"
+                        style="font-family: 'Righteous', sans-serif;">Categories</span></h1>
+                <p class="text-center mb-12" style="font-family: 'Righteous', sans-serif;  color: #4F547B;">100+ unique
+                    online course list designs</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imageone.png"
                             alt="Digital Marketing" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">Digital Marketing</h2>
-                        <p>25 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">Digital Marketing</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;">25 Courses</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagetwo.png"
                             alt="Web Development" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">Web Development</h2>
-                        <p>16 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">Web Development</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;">16 Courses</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img
                             src="./topcategories_imagethree.png" alt="Art & Humanities" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">Art & Humanities</h2>
-                        <p>76 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">Art & Humanities</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;">76 Courses</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagefour.png"
                             alt="Personal Development" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">Personal Development</h2>
-                        <p>22 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">Personal Development</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;">22 Courses</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagefive.png"
                             alt="IT and Software" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">IT and Software</h2>
-                        <p>110 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">IT and Software</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;">110 Courses</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md text-center"> <img src="./topcategories_imagesix.png"
                             alt="Graphic Design" class="mx-auto mb-4">
-                        <h2 class="text-xl font-semibold mb-2">Graphic Design</h2>
-                        <p>85 Courses</p>
+                        <h2 class="text-xl font-semibold mb-2"
+                            style="font-family: 'Righteous', sans-serif;  color: #324361;">Graphic Design</h2>
+                        <p style="font-family: 'Righteous', sans-serif;  color: #4F547B;"><br>85 Courses</p>
                     </div>
                 </div>
             </div>
@@ -373,14 +454,20 @@
         <div class="flex items-center justify-center min-h-screen">
             <div class="relative w-full max-w-2xl p-8 bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg shadow-lg"
                 style="min-height: 250px;">
-                <h2 class="text-2xl font-bold text-center text-white">Subscribe For Get Update<br> Every New Courses
+                <h2 class="text-2xl font-bold text-center text-white"
+                    style="font-family: 'Righteous', sans-serif;  color: #FFFFFF;">Subscribe For Get Update<br> Every
+                    New Courses
                 </h2>
-                <p class="mt-2 text-center text-white ">20k+ students daily learn with Eduvi. Subscribe for new courses.
+                <p class="mt-2 text-center text-white"
+                    style="font-family: 'Righteous', sans-serif;  color: #FFFFFF; font-size: 8px;">20k+ students daily
+                    learn with Eduvi. Subscribe for new courses.
                 </p>
-                <div class="mt-6 flex justify-center">
+                <div class="mt-6 flex justify-center"
+                    style="font-family: 'Righteous', sans-serif;  color: #FFFFFF; font-size: 10px;">
                     <input type="email" placeholder="enter your email"
                         class="px-4 py-2 rounded-l-lg focus:outline-none">
-                    <button class="px-4 py-2 bg-blue-600 text-white rounded-r-lg">Subscribe</button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-r-lg"
+                        style="font-family: 'Righteous', sans-serif;  color: #FFFFFF; font-size: 10px;">Subscribe</button>
                 </div>
                 <div class="absolute top-4 left-4 w-12 h-12 rounded-full overflow-hidden">
                     <img src="./subscribe_imagesone.png" alt="Profile Image" class="w-full h-full object-cover">
@@ -431,8 +518,10 @@
                     <div class="text-center mb-4"> <!-- Reduced margin-bottom -->
                         <div class="absolute left-20 bg-blue-50"> <img src="testimonial_left_arc.png" alt="Arc Image"
                                 class="w-24 h-24 object-cover"> </div>
-                        <h1 class="text-3xl font-bold text-blue-700">Testimonials</h1>
-                        <p class="text-gray-600">What our students say about us</p>
+                        <h1 class="text-3xl font-bold text-blue-700"
+                            style="font-family: 'Righteous', sans-serif;  color: #0E38CD;">Testimonials</h1>
+                        <p class="text-gray-600" style="font-family: 'Righteous', sans-serif;  color: #4E596B;">What our
+                            students say about us</p>
                         <div class="bg-blue-50 items-center justify-center">
                             <div class="container mx-auto py-12">
                                 <div class="text-center mb-4"> <!-- Reduced margin-bottom -->
@@ -440,26 +529,36 @@
                                         <!-- Your content -->
                                         <div class="relative mt-20">
                                             <div class="card" style="left: -430px; top: 50px;">
-                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture">
-                                                <p>Such an amazing traniner and easily understand the entire syllabus,
+
+                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture"
+                                                    class="profile-icon"> 
+                                                <p
+                                                    style="font-family: 'Righteous', sans-serif;  color: #7E7EAA; font-size: 10px;">
+                                                    Such an amazing traniner and easily understand the entire syllabus,
                                                     and the guidence will be super and good to the way of explaning.</p>
-                                                <div class="flex">
+                                                <div class="flex justify-center">
                                                     <span class="text-yellow-500">★★★★☆</span>
                                                 </div>
                                             </div>
                                             <div class="card" style="left: 0; top: 0; margin: auto;">
-                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture">
-                                                <p>Such an amazing traniner and easily understand the entire syllabus,
+                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture"
+                                                    class="profile-icon"> 
+                                                <p
+                                                    style="font-family: 'Righteous', sans-serif;  color: #7E7EAA; font-size: 10px;">
+                                                    Such an amazing traniner and easily understand the entire syllabus,
                                                     and the guidence will be super and good to the way of explaning.</p>
-                                                <div class="flex">
+                                                <div class="flex justify-center">
                                                     <span class="text-yellow-500">★★★★☆</span>
                                                 </div>
                                             </div>
                                             <div class="card" style="left: 400px; top: 50px;">
-                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture">
-                                                <p>Such an amazing traniner and easily understand the entire syllabus,
+                                                <img src="./testmionial_profile_icon.png" alt="Profile Picture"
+                                                    class="profile-icon"> 
+                                                <p
+                                                    style="font-family: 'Righteous', sans-serif;  color: #7E7EAA; font-size: 10px;">
+                                                    Such an amazing traniner and easily understand the entire syllabus,
                                                     and the guidence will be super and good to the way of explaning.</p>
-                                                <div class="flex">
+                                                <div class="flex justify-center">
                                                     <span class="text-yellow-500">★★★★☆</span>
                                                 </div>
                                             </div>
