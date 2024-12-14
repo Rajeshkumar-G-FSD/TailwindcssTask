@@ -4,14 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Arc Image</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Overlapping Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card {
+            position: absolute;
+            width: 450px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
-<body >
-    <div class="flex items-center justify-center min-h-screen bg-purple-500">
-    <div class="relative"> <img src="./arcimage.png" alt="Arc" class="block mx-auto"> </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="relative w-full max-w-lg p-8 bg-gradient-to-r from-blue-400 to-pink-500 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-center text-white">Subscribe For Get Update Every New Courses</h2>
+        <p class="mt-2 text-center text-white">20k+ students daily learn with Eduvi. Subscribe for new courses.</p>
+        <div class="mt-6 flex justify-center">
+            <input type="email" placeholder="enter your email" class="px-4 py-2 rounded-l-lg focus:outline-none">
+            <button class="px-4 py-2 bg-blue-600 text-white rounded-r-lg">Subscribe</button>
+        </div>
+        <div class="absolute top-4 left-4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagesone.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute top-4 right-4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagesfour.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute bottom-4 left-4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagesthree.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute bottom-4 right-4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagessix.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute top-1/2 left-1/4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagestwo.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute top-1/2 right-1/4 w-12 h-12 rounded-full overflow-hidden">
+            <img src="./subscribe_imagesfive.png" alt="Profile Image" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute bottom-0 left-0 w-12 h-12 transform translate-y-1/2">
+            <img src="./triangle_touch_popup.png" alt="Triangle Image" class="w-full h-full object-cover">
+        </div>
+    </div>
+    <div class="absolute -bottom-6 right-0 w-12 h-12 transform -translate-x-1/2"> <img src="./triangle_dark.png" alt="Triangle Image Right" class="w-full h-full object-cover"> </div>
 </body>
+</html>
 
 </html>
